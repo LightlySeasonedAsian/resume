@@ -8,10 +8,7 @@ function Contact({phone,email,linkedIn,linktree,img}) { return(
                             <p className="card-header-title">Contact</p>
                             <button className="card-header-icon" aria-label="more options">
                                 <span className="icon">
-                                    <i className="fas fa-angle-down" aria-hidden="true"> 
-                                    {/* icon needs to be included to see here i think */}
-                                        x
-                                        
+                                    <i className="fas fa-angle-down" aria-hidden="true">
                                     </i>
                                 </span>
                             </button>
@@ -26,7 +23,7 @@ function Contact({phone,email,linkedIn,linktree,img}) { return(
                                     <div className="content">
                                         <p className="title is-4">{phone}</p>
                                         <p className="subtitle is-6">
-                                            <a href={email}>Gmail</a>
+                                            <a href={email}>daniel.r.moreland@gmail</a>
                                         </p>
                                         <p>
                                             <a className="content" href={linkedIn}>LinkedIn</a>

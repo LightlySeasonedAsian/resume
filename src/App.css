@@ -5,13 +5,20 @@
   padding: 5% 7.5% 0 7.5%;
 }
 .app {
-  background-image:
+  
+    background: url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+  /* background-image:
   url(
 "https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
 background-size: cover;            
 background-repeat: no-repeat;       
 height: 250vh;
-background-attachment: fixed;
+background-attachment: fixed; */
     font-size: 20px;
     text-shadow:
         0.001em  white,
@@ -19,7 +26,15 @@ background-attachment: fixed;
         -0.001em  white,
         -0.001em white;
 };
-
+.collapsible .content {
+  padding: 6px;
+  background-color: #eeeeee;
+}
+.collapsible .header {
+  background-color: #dddddd;
+  padding: 6px;
+  cursor: pointer;
+}
 /* .App {
   text-align: center;
 }
