@@ -1,7 +1,7 @@
 function Job({position,company,date,detail}) { return(
     <section className="section">
-        <h1>{position}</h1>
-        <h2>{company}</h2>
+        <h1 className="subtitle">{position}</h1>
+        <h2 className="subtitle">{company}</h2>
         <h3>{date}</h3>
         <ul>
             <li>
