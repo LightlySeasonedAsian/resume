@@ -3,7 +3,7 @@ import React from 'react';
 import Collapsible from './components/Collapsible';
 // import {useState} from 'react';
 import Banner from './components/Banner';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Job from './components/Job';
 import Contact from './components/Contact';
 import headshot from './images/headshot.jpg';
@@ -20,9 +20,7 @@ function App() {
       title={"Daniel R Moreland"}
       subtitle={"Full Stack Software Engineer"}
     />
-   <div className="App">
-    <Collapsible/>
-    </div>
+   
     <div className="tile is-ancestor">
       <div className="tile is-parent is-vertical is-4">
         <div className="tile is-child">
@@ -35,29 +33,36 @@ function App() {
             linktree={"https://linktr.ee/danielRmoreland"}
             img={headshot}
           />
-          <Header title={"Education"} />
+          
+          <Collapsible header={"Education"} contentComponent={<div>
+          {/* <Header title={"Education"} /> */}
           <Education
             degree={"B.S. Electro-Mechanical Engineering"}
             school={"Murray State University"}
             date={"December 2014 – December 2017"}
             detail={["Magna Cum Laude"]}
-          />
-          <Education
+          /> <Education
             degree={"M.S. Robotics"}
             school={"Wayne State University"}
             date={"December 2019 – December 2021"}
             detail={["Magna Cum Laude"]}
           />
+          </div>
+        } />
+          
+          
         </div>
+        <Collapsible header={"Skills"} contentComponent={
         <div className="tile is-child">
-          <Header title={"Skills"} />
+          {/* <Header title={"Skills"} /> */}
           <Skills />
-        </div>
+        </div>} />
+        
       </div>
-  
-      <div className="tile is-parent is-vertical-8">
+      <Collapsible header={"Professional Experience"} contentComponent={
+        <div className="tile is-parent is-vertical-8">
         <div className="tile is-child">
-          <Header title={"Professional Experience"} />
+          {/* <Header title={"Professional Experience"} /> */}
           <Job
             position={"Software Engineer/ Solution Engineer/  Team Leader"}
             company={"MFGx LLC - Remote"}
@@ -93,6 +98,8 @@ function App() {
           />
         </div>
       </div>
+      } />
+      
     </div>
   </div>
   

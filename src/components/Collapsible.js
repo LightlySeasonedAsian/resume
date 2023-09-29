@@ -1,17 +1,17 @@
 import {useCollapse} from 'react-collapsed';
 
-function Collapsible() {
+function Collapsible({ contentComponent,header }) {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (
     <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
-            {isExpanded ? 'Collapse' : 'Expand'}
+        <div className="title" {...getToggleProps()}>
+            {isExpanded ? header : header}
         </div>
         <div {...getCollapseProps()}>
-            <div className="content">
-                Now you can see the hidden content. <br/><br/>
-                Click again to hide...
-            </div>
+            
+            { contentComponent }
+                
+            
         </div>
     </div>
     );
