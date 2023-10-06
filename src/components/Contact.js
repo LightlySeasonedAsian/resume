@@ -8,8 +8,8 @@ function Contact({phone,email,linkedIn,linktree,img}) { return(
                             <p className="card-header-title">Contact</p>
                             <button className="card-header-icon" aria-label="more options">
                                 <span className="icon">
-                                    <i className="fas fa-angle-down" aria-hidden="true">
-                                    </i>
+                                    {/* <i className="fas fa-angle-down" aria-hidden="true">
+                                    </i> */}
                                 </span>
                             </button>
                         </header>

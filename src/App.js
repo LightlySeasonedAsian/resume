@@ -20,6 +20,9 @@ function App() {
       title={"Daniel R Moreland"}
       subtitle={"Full Stack Software Engineer"}
     />
+    <div>
+            <br></br>
+        </div>
    
     <div className="tile is-ancestor">
       <div className="tile is-parent is-vertical is-4">
