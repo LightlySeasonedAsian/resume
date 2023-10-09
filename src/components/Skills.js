@@ -1,6 +1,8 @@
-function Skills() { return(
+function Skills({detail}) { return(
     <section className="section">
-        <ul>
+        <ul>{detail.length > 0 && detail.map((item) => <li> <i className="fas fa-caret-right" aria-hidden="true">
+    </i> {item} </li>)}</ul>
+        {/* <ul>
             <li>
                 NodeJS
             </li>
@@ -55,7 +57,7 @@ function Skills() { return(
             <li>
                 Active Listening
             </li>
-        </ul>       
+        </ul>        */}
        </section>
       )
    }

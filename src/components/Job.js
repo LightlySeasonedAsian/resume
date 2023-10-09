@@ -1,19 +1,14 @@
-function Job({position,company,date,detail}) { return(
-    <section className="section">
-        <h1 className="subtitle">{position}</h1>
-        <h2 className="subtitle">{company}</h2>
-        <h3>{date}</h3>
-        <ul>
-            <li>
-                {detail[0]}
-            </li>
-            <li>
-                {detail[1]}
-            </li>
-            <li>
-                {detail[2]}
-            </li>
-        </ul>       
+
+function Job({position,company,date,detail}) {
+    
+    
+    return(
+    <section className="section is-small">
+        <h1 className="title ">{position}</h1>
+        <h3 className="subtitle">{company}</h3>
+        <h6>{date}</h6>
+        <ul>{detail.length > 0 && detail.map((item) => <li> <i className="fas fa-forward" aria-hidden="true">
+    </i> {item} </li>)}</ul>
        </section>
       )
    }

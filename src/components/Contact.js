@@ -6,12 +6,6 @@ function Contact({phone,email,linkedIn,linktree,img}) { return(
                     <div className="card">
                         <header className="card-header">
                             <p className="card-header-title">Daniel Moreland</p>
-                            <button className="card-header-icon" aria-label="more options">
-                                <span className="icon">
-                                    {/* <i className="fas fa-angle-down" aria-hidden="true">
-                                    </i> */}
-                                </span>
-                            </button>
                         </header>
                             <div className="card-image">
                                 <figure className="image is-1by1 is-centered">

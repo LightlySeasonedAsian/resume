@@ -50,7 +50,7 @@ function App() {
             degree={"M.S. Robotics"}
             school={"Wayne State University"}
             date={"December 2019 – December 2021"}
-            detail={["Magna Cum Laude"]}
+            detail={[""]}
           />
           </div>
         } />
@@ -59,8 +59,24 @@ function App() {
         </div>
         <Collapsible header={"Skills"} contentComponent={
         <div className="tile is-child">
-          {/* <Header title={"Skills"} /> */}
-          <Skills />
+          <Skills detail={["NodeJS",
+"MongoDB",
+"React",
+"JavaScript",
+"Python",
+"Express",
+"HTML/CSS",
+"GraphQL",
+"SQL",
+"Agile/Scrum Methodologies",
+"Technical Writing",
+"IEC 61131-3 (PLC’s)",
+"Git",
+"JSONata",
+"REST API Development",
+"Leadership",
+"Communication",
+"Active Listening"]}/>
         </div>} />
         
       </div>
