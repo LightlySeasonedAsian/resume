@@ -20,14 +20,14 @@ function App() {
       title={"Daniel R Moreland"}
       subtitle={"Full Stack Software Engineer"}
     />
-    <div>
-            <br></br>
-        </div>
+    
    
     <div className="tile is-ancestor">
+      
       <div className="tile is-parent is-vertical is-4">
         <div className="tile is-child">
-          <Contact
+          <Collapsible header={"Contact Info"} contentComponent={
+            <Contact
             phone={"(270) 970-9550"}
             email={
               "mailto:daniel.r.moreland@gmail.com?subject=Online Resume Inquiry"
@@ -36,6 +36,8 @@ function App() {
             linktree={"https://linktr.ee/danielRmoreland"}
             img={headshot}
           />
+          }/>
+          
           
           <Collapsible header={"Education"} contentComponent={<div>
           {/* <Header title={"Education"} /> */}
@@ -62,7 +64,8 @@ function App() {
         </div>} />
         
       </div>
-      <Collapsible header={"Professional Experience"} contentComponent={
+      <div className="tile is-parent is-vertical-8">
+        <Collapsible header={"Professional Experience"} contentComponent={
         <div className="tile is-parent is-vertical-8">
         <div className="tile is-child">
           {/* <Header title={"Professional Experience"} /> */}
@@ -102,6 +105,8 @@ function App() {
         </div>
       </div>
       } />
+      </div>
+      
       
     </div>
   </div>
