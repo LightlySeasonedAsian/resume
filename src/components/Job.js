@@ -7,8 +7,8 @@ function Job({position,company,date,detail}) {
         <h1 className="title ">{position}</h1>
         <h3 className="subtitle">{company}</h3>
         <h6>{date}</h6>
-        <ul>{detail.length > 0 && detail.map((item) => <li> <i className="fas fa-forward" aria-hidden="true">
-    </i> {item} </li>)}</ul>
+        <ul>{detail.length > 0 && detail.map((item) => <li key={item.id}> <i className="fas fa-forward" aria-hidden="true">
+    </i> {item.body} </li>)}</ul>
        </section>
       )
    }

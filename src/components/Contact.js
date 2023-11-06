@@ -17,7 +17,7 @@ function Contact({phone,email,linkedIn,linktree,img}) { return(
                                     <div className="content">
                                         <p className="title is-4">{phone}</p>
                                         <p className="subtitle is-6">
-                                            <a href={email}>daniel.r.moreland@gmail</a>
+                                            <a href={email}>daniel.r.moreland@gmail.com</a>
                                         </p>
                                         <p>
                                             <a className="content" href={linkedIn}>LinkedIn</a>

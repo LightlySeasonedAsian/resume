@@ -1,7 +1,7 @@
 function Skills({detail}) { return(
     <section className="section">
-        <ul>{detail.length > 0 && detail.map((item) => <li> <i className="fas fa-caret-right" aria-hidden="true">
-    </i> {item} </li>)}</ul>
+        <ul>{detail.length > 0 && detail.map((item) => <li key={item.id} > <i className="fas fa-caret-right" aria-hidden="true">
+    </i> {item.name} </li>)}</ul>
         {/* <ul>
             <li>
                 NodeJS
